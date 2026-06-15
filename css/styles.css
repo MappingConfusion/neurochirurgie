@@ -1075,6 +1075,8 @@ ul, ol {
     opacity: 0;
     transition: transform 0.35s ease, opacity 0.35s ease;
     pointer-events: none;
+    max-height: calc(100vh - 72px);
+    overflow-y: auto;
   }
 
   .nav-menu.open {
@@ -1112,5 +1114,39 @@ ul, ol {
 
   .contact-map {
     min-height: 300px;
+  }
+
+  .container {
+    padding: 0 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-text {
+    display: none;
+  }
+
+  .logo-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.2rem;
+  }
+
+  .lang-switcher {
+    padding: 3px;
+  }
+
+  .lang-btn {
+    padding: 5px 10px;
+    font-size: 0.7rem;
+  }
+
+  .portrait-frame {
+    width: 180px;
+    height: 180px;
+  }
+
+  .about-portrait {
+    padding: 24px;
   }
 }
